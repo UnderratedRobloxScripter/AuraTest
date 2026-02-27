@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "vercel-build": "npm install && npm run build",
-    "build": "vite build",
-    "dev": "vite",
-    "start": "vite preview"
-  },
+  "vercel-build": "node build.js",
+  "dev": "vite",
+  "start": "vite preview"
+}
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
