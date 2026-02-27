@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": { "zeroConfig": true }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "build": {
+    "env": {
+      "GMAIL_USER": "@gmail_user",
+      "GMAIL_PASS": "@gmail_pass"
+    },
+    "command": "npm run vercel-build"
+  }
+}
